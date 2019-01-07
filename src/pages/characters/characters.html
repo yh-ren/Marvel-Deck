@@ -1,0 +1,54 @@
+<ion-header>
+
+  <ion-navbar hideBackButton color="maroon">
+    <ion-searchbar placeholder="Search"></ion-searchbar>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+	<ion-list inset no-lines>
+		<ion-list-header>
+			Characters
+		</ion-list-header>
+		
+		<ion-item *ngFor="let character of characters"
+		(click)="onCharacterPage(character)">
+			<ion-thumbnail item-start>
+				<img src="{{ character.thumbnail.path }}.{{ character.thumbnail.extension }}">
+			</ion-thumbnail>
+			<div class="name" style="font-size: 18px;">{{ character.name }}</div>
+		</ion-item>
+	</ion-list>
+
+<!--
+
+	<ion-list inset no-lines>
+		<ion-list-header>
+			Characters
+		</ion-list-header>
+		<ion-item *ngFor="let name of characterNames">
+			<h2>{{ name }}</h2>
+		</ion-item>
+	</ion-list>
+
+-->
+
+</ion-content>
+
+<ion-footer>
+	<ion-toolbar class="footer-bar">
+		<div class="buttons-container">
+			<button ion-button clear small icon-only color="maroon"
+			(click)="onNextPage(false)">
+				<ion-icon name="arrow-back"></ion-icon>
+			</button>
+			<button ion-button clear small icon-only color="maroon"
+			(click)="onNextPage(true)">
+				<ion-icon name="arrow-forward"></ion-icon>
+			</button>
+		</div>
+	</ion-toolbar>
+</ion-footer>

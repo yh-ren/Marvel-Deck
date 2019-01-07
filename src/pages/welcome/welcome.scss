@@ -1,0 +1,23 @@
+page-welcome {
+
+	.myView {
+		background-image: url('../assets/imgs/welcome-light.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.container {
+   		margin: 0 auto;
+   		text-align: center;
+   		padding: 60% 0 100% 0;
+	}
+
+	h2 {
+		color: #fff;
+		font-family: arial-black;
+		font-size: 25px;
+		text-transform: uppercase;
+		text-shadow: 3px 2px color($colors, maroon);
+	}
+
+}

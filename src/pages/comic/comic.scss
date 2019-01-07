@@ -1,0 +1,39 @@
+page-comic {
+
+	.words {
+		padding-top: 50px;
+		margin: 0 auto;
+	}
+
+	.img-container {
+		position: relative;
+  		top: 0;
+  		left: 0;
+	}
+
+	.bg-img-container {
+		overflow: hidden;
+	}
+
+	.bg-img {
+		position: relative;
+  		top: 0;
+  		left: 0;
+        height: 220px; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+		filter: blur(10px);
+		transform: scale(1.08);
+	}
+
+	.comic-cover {
+		position: absolute;
+		top: 160px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 35%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+}

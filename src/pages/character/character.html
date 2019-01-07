@@ -1,0 +1,42 @@
+
+<ion-content>
+
+	<div class="close-button">
+	    <button ion-button clear large color="maroon"
+	    (click)="onCloseModal()">
+	    	<ion-icon name="arrow-down"></ion-icon>
+	    </button>
+	</div>
+
+
+	<div class="profile-img">
+		<img src="{{ character.thumbnail.path }}.{{ character.thumbnail.extension }}">
+	</div>
+
+	<h2>{{ character.name }}</h2>
+
+	<div class="attributes" style="padding: 10px 40px 8px 40px;">
+		<ion-row>
+			<ion-col>
+				<span style="color: #900c3f;">{{ series.length }}</span>
+				Series
+			</ion-col>
+			<ion-col>
+				<span style="color: #900c3f;">{{ stories.length }}</span>
+				Stories
+			</ion-col>
+		</ion-row>
+	</div>
+	
+	<div class="desc">
+		<p>{{ character.description }}</p>
+	</div>
+
+</ion-content>
+
+<ion-footer class="footer-bar">
+	<button ion-button full large color="light" icon-start
+	(click)="onComicsPage()">
+		<b>View comics</b>
+	</button>
+</ion-footer>

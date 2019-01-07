@@ -14,3 +14,53 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+	
+	.close-button {
+		z-index: 2;
+		position: absolute;
+		right: 0;
+		top: -5px; 
+	}
+
+	.attributes {
+		font-family: roboto;
+		text-align: center;
+		color: #5b5b5b;
+		padding: 0 60px 15px 60px;
+		border-bottom: 1px solid #d5d5d5;
+	}
+
+	h2 {
+		font-family: arial-black;
+		text-align: center;
+		padding: 0 40px 0 40px;
+	}
+
+	.desc {
+		padding: 0 40px 10px 40px;
+		margin: auto;
+	}
+
+	p {
+		font-family: roboto;
+		font-size: 16px;
+	}
+
+	b {
+		font-size: 14px;
+		font-weight: 900;
+		text-transform: uppercase;
+		color: color($colors, maroon);
+	}
+
+	.name {
+		font-family: roboto;
+		font-size: 16px;
+		color: #333;
+	}
+
+
+
+
+

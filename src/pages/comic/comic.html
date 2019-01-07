@@ -1,0 +1,36 @@
+<ion-content>
+
+	<div class="close-button">
+	    <button ion-button clear large color="maroon"
+	    (click)="onCloseModal()">
+	    	<ion-icon name="arrow-down"></ion-icon>
+	    </button>
+	</div>
+
+	<div class="img-container"> 
+		<div class="bg-img-container"> 
+			<div class="bg-img" [ngStyle]="{ 'background-image': 'url(' + comicCoverURL + ')' }"></div> 
+		</div> 
+		<img class="comic-cover" src="{{ comicCoverURL }}">	
+	</div>
+
+	<div class="words" *ngFor="let comicDetails of comicData">
+
+		<h2>{{ comicDetails.title }}</h2>
+
+		<div class="attributes">{{ comicDetails.series.name }}</div>
+		<br>
+
+		<div class="desc">
+
+			<b>Description</b>
+			<p>{{ comicDetails.description }}</p>
+
+			<b>Format</b>
+			<p>{{ comicDetails.format }}</p>
+
+		</div>
+
+	</div>
+
+</ion-content>
